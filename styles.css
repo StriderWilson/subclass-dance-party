@@ -3,7 +3,7 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url(http://source1events.com/wp-content/uploads/2018/01/shutterstock_555253327.jpg);
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -11,7 +11,15 @@ body, a:link, a:visited, a:active{
 }
 .title, .addDancerButton{
   padding:5px 12px;
-  float:right;
+  float: right;
+  background-color: #4CAF50; /* Green */
+  border:5px solid;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 .topbar{
   height:32px;
@@ -21,7 +29,8 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  border:1px solid;
+  border-radius:150px;
   position:absolute;
+  float: left;
 }
