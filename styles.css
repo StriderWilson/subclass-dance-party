@@ -3,18 +3,27 @@ body, html{
 }
 body{
   margin: 0px;
-  background-image: url(http://source1events.com/wp-content/uploads/2018/01/shutterstock_555253327.jpg);
+  background-image: url('https://media.giphy.com/media/l3vQZLz0CX2Rza1bi/giphy.gif');
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: red;
 }
-.title, .addDancerButton{
+.main{
+  width: 960px;
+  height:960px;
+  position: relative;
+}
+.title,
+.addDancerButton,
+.addLineUpButton,
+.addpairDanceButton{
   padding:5px 12px;
   float: right;
-  background-color: #4CAF50; /* Green */
+  background-color: black; /* Green */
   border:5px solid;
-  color: white;
+  border-radius: 10px;
+  color: red;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -25,12 +34,50 @@ body, a:link, a:visited, a:active{
   height:32px;
   background-color: #555;
 }
-.title{
-  background-color: #777;
-}
 .dancer{
-  border:1px solid;
-  border-radius:150px;
   position:absolute;
   float: left;
+}
+
+.blinky {
+  height: 200px;
+  width: 500px;
+  background-image: url('https://giuliatestsite.neocities.org/dancing.gif');
+}
+
+.rotated {
+  animation: rotation 3s infinite linear;
+  background-image: url('https://media.giphy.com/media/S2qjvj4F0EKty/giphy.gif');
+  height: 280px;
+  width: 200px;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);;
+  }
+}
+
+.left{
+  animation: left 3s infinite;
+  background-image: url('https://i.gifer.com/PYw.gif');
+  height: 280px;
+  width: 200px;
+}
+
+@keyframes left {
+  from {
+    left: 0px;
+  }
+  to {
+    right: 400px;
+  }
+}
+
+.mouse{
+  background-image: url('https://myrealdomain.com/images/animated-mouse-2.gif');
+  height: 200px;
+  width: 155px;
 }
